@@ -157,10 +157,20 @@ if __name__ == "__main__":
     ap.add_argument("--only")
     ap.add_argument("--email", action="store_true")
     a = ap.parse_args()
+    try:
+        orig_state = open(STATE, encoding="utf-8").read()
+    except FileNotFoundError:
+        orig_state = None
     res = run(a.limit, a.only)
     body = format_digest(res)
     print(body)
     if a.email and res["new"]:
         from notify_email import send_email
-        send_email(f"Job Agent: {len(res['new'])} company page(s) with new postings", body)
+        try:
+            send_email(f"Job Agent: {len(res['new'])} company page(s) with new postings", body)
+        except Exception:
+            if orig_state is not None:      # undo, so these finds are reported on the next run
+                open(STATE, "w", encoding="utf-8").write(orig_state)
+            print("Email failed: state restored, these finds will be reported next run.")
+            raise
         print("Email sent.")
