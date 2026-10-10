@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "30 1 * * *"      # 01:30 UTC = 07:00 IST
   workflow_dispatch:           # lets you run it manually from the Actions tab
+    inputs:
+      send_test:
+        description: "Send a test email first (checks the email secrets)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write              # needed to save seen.json back to the repo
@@ -30,12 +35,23 @@ jobs:
           pip install -r requirements-ci.txt
           playwright install --with-deps chromium
 
+      - name: Send test email
+        if: github.event_name == 'workflow_dispatch' && inputs.send_test
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python notify_email.py
+
       - name: Scan career pages and email new finds
         env:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python page_watch.py --email
+        run: |
+          EXTRA=""
+          if [ "$(TZ=Asia/Kolkata date +%u)" = "1" ]; then EXTRA="--status"; fi   # Mondays: weekly status email
+          python page_watch.py --email $EXTRA
 
       - name: Save state (seen.json)
         if: always()

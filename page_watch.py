@@ -151,12 +151,13 @@ def format_digest(res):
     return "\n".join(lines)
 
 
-if __name__ == "__main__":
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int)
     ap.add_argument("--only")
     ap.add_argument("--email", action="store_true")
-    a = ap.parse_args()
+    ap.add_argument("--status", action="store_true", help="email a status summary even if nothing is new")
+    a = ap.parse_args(argv)
     try:
         orig_state = open(STATE, encoding="utf-8").read()
     except FileNotFoundError:
@@ -164,13 +165,21 @@ if __name__ == "__main__":
     res = run(a.limit, a.only)
     body = format_digest(res)
     print(body)
-    if a.email and res["new"]:
+    if a.email and (res["new"] or a.status):
         from notify_email import send_email
+        if res["new"]:
+            subject = f"Job Agent: {len(res['new'])} company page(s) with new postings"
+        else:
+            subject = "Job Agent: weekly status - running fine, nothing new"
         try:
-            send_email(f"Job Agent: {len(res['new'])} company page(s) with new postings", body)
+            send_email(subject, body)
         except Exception:
             if orig_state is not None:      # undo, so these finds are reported on the next run
                 open(STATE, "w", encoding="utf-8").write(orig_state)
             print("Email failed: state restored, these finds will be reported next run.")
             raise
         print("Email sent.")
+
+
+if __name__ == "__main__":
+    main()
