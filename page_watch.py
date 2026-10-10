@@ -6,6 +6,7 @@ First time a company is seen it is only recorded as a baseline (no alert)."""
 import argparse, csv, json, re, time
 from urllib.parse import urljoin
 import requests, yaml
+import ats_fetch
 from bs4 import BeautifulSoup
 
 try:
@@ -102,7 +103,7 @@ def run(limit=None, only=None):
     cfg = load_cfg()
     hit = build_regex(cfg["page_watch_keywords"])
     excl = [w.lower() for w in cfg["roles_exclude"]]
-    rows = [r for r in csv.DictReader(open("companies.csv", encoding="utf-8")) if r["check_method"] in (("page_watch", "needs_browser") if HAS_BROWSER else ("page_watch",))]
+    rows = [r for r in csv.DictReader(open("companies.csv", encoding="utf-8")) if r["check_method"] in (("page_watch", "needs_browser", "api") if HAS_BROWSER else ("page_watch", "api"))]
     if only:
         rows = [r for r in rows if r["company"].lower() == only.lower()]
     if limit:
@@ -115,13 +116,21 @@ def run(limit=None, only=None):
     for r in rows:
         urls = list(dict.fromkeys(u for u in (r["early_careers_url"], r["careers_url"]) if u))
         items, ok = set(), False
-        for u in urls:
+        if r["check_method"] == "api":
             try:
-                items.update(get_items(u, hit, excl))
+                items.update(ats_fetch.fetch(r, hit, excl))
                 ok = True
             except Exception as e:
-                print(f"  ! {r['company']}: {u} -> {str(e)[:90]}")
-            time.sleep(1.5)                                         # be polite
+                print(f"  ! {r['company']}: API -> {str(e)[:90]}")
+            time.sleep(1)
+        else:
+            for u in urls:
+                try:
+                    items.update(get_items(u, hit, excl))
+                    ok = True
+                except Exception as e:
+                    print(f"  ! {r['company']}: {u} -> {str(e)[:90]}")
+                time.sleep(1.5)                                     # be polite
         if not ok:
             failed.append(r["company"])
             continue

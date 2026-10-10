@@ -1,11 +1,16 @@
-"""Marks companies as skipped in companies.csv.
+"""Changes check_method in companies.csv (default: skip).
   python skip_companies.py "Electronic Arts" Teleperformance
+  python skip_companies.py --method api Palantir Workday NXP Unisys
 Matches any part of the company name (case-insensitive) and prints what it changed."""
 import csv, sys
 
-terms = [t.lower() for t in sys.argv[1:]]
+args = sys.argv[1:]
+method = "skip"
+if args[:1] == ["--method"] and len(args) >= 2:
+    method, args = args[1], args[2:]
+terms = [t.lower() for t in args]
 if not terms:
-    sys.exit('Usage: python skip_companies.py "Company name" [another ...]')
+    sys.exit('Usage: python skip_companies.py [--method api|page_watch|skip] "Company name" [another ...]')
 
 with open("companies.csv", encoding="utf-8", newline="") as f:
     rows = list(csv.DictReader(f))
@@ -13,8 +18,8 @@ with open("companies.csv", encoding="utf-8", newline="") as f:
 hits = 0
 for r in rows:
     if any(t in r["company"].lower() for t in terms):
-        print(f"skipped: {r['company']}  (was: {r['check_method']})")
-        r["check_method"] = "skip"
+        print(f"{method}: {r['company']}  (was: {r['check_method']})")
+        r["check_method"] = method
         hits += 1
 
 if hits == 0:
