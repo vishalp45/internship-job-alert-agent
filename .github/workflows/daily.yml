@@ -53,6 +53,14 @@ jobs:
           if [ "$(TZ=Asia/Kolkata date +%u)" = "1" ]; then EXTRA="--status"; fi   # Mondays: weekly status email
           python page_watch.py --email $EXTRA
 
+      - name: Scan hackathon and competition pages
+        if: ${{ !cancelled() }}
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python event_watch.py --email
+
       - name: Save state (seen.json)
         if: always()
         run: |
