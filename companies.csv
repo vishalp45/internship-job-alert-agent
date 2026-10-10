@@ -1,0 +1,107 @@
+company,sector,careers_url,early_careers_url,ats_type,slug,priority,check_method,notes
+Atlassian,Software/technology,https://www.atlassian.com/company/careers/all-jobs,https://www.atlassian.com/company/careers/earlycareers,custom,,,page_watch,Discussed; India Summer 2027 role not verified open
+Postman,Software/API tools,https://www.postman.com/company/careers/open-positions/,https://www.postman.com/company/careers/,custom,,,page_watch,Discussed; no verified India Summer 2027 opening found
+BrowserStack,Software/testing,https://www.browserstack.com/careers,https://www.browserstack.com/careers,custom,,,page_watch,Discussed; no verified Summer 2027 opening found
+Chargebee,SaaS/fintech,https://www.chargebee.com/careers/,https://www.chargebee.com/careers/,custom,,,page_watch,Discussed; no verified Summer 2027 opening found
+Salesforce,Software/CRM,https://careers.salesforce.com/,https://www.salesforce.com/company/careers/university/internships/,custom,,,page_watch,Discussed; SWE posting JR337715 had branch restrictions/status not confirmed
+ServiceNow,Enterprise software,https://careers.servicenow.com/,https://careers.servicenow.com/early-careers/,custom,,,page_watch,Discussed; no suitable India Summer 2027 opening verified
+SAP,Enterprise software,https://jobs.sap.com/,https://jobs.sap.com/en/students-and-graduates/students/internships/,custom,,,page_watch,Discussed; no suitable India Summer 2027 opening verified
+Workday,Enterprise software,https://workday.wd5.myworkdayjobs.com/Workday,https://www.workday.com/en-in/company/careers/early-career.html,workday,workday/Workday,,api,Discussed; no suitable India Summer 2027 opening verified
+Walmart,Retail/technology/supply chain,https://careers.walmart.com/,https://careers.walmart.com/us/en/career-areas/students-and-grads,custom,,,page_watch,Discussed; one supplied role URL returned 404; no practical match verified
+Target,Retail/technology,https://corporate.target.com/careers,https://corporate.target.com/careers/career-areas/intern-entry-level/internships,custom,,,page_watch,Discussed; no suitable India Summer 2027 opening verified
+JPMorgan Chase (JPMC),Finance/technology,https://www.jpmorganchase.com/careers/explore-opportunities/students-and-graduates,https://www.jpmorganchase.com/careers/students,custom,,,page_watch,Discussed; no verified public India Summer 2027 opening found
+Goldman Sachs,Finance/technology,https://www.goldmansachs.com/careers,https://www.goldmansachs.com/careers/students/programs-and-internships,custom,,,page_watch,Discussed; India Summer Analyst page previously discussed; current accepting status must be rechecked
+Intuit,Software/fintech,https://jobs.intuit.com/,https://www.intuit.com/in/careers/internships/,custom,,,page_watch,Discussed; no suitable India Summer 2027 opening verified
+LTIMindtree,IT services,https://www.ltimindtree.com/careers/,https://www.ltimindtree.com/careers/,custom,,,page_watch,Discussed; no verified public India Summer 2027 application found
+Mphasis,IT services,https://careers.mphasis.com/,https://careers.mphasis.com/home/hot-jobs/category/campus-programs.html,custom,,,page_watch,Discussed; no verified open internship found
+Texas Instruments,Semiconductors,https://careers.ti.com/en/sites/CX/jobs,https://careers.ti.com/,custom,,,page_watch,Discussed; no suitable India internship verified
+L&T / Larsen & Toubro,Engineering/technology,https://www.larsentoubro.com/careers/,https://www.larsentoubro.com/careers/,custom,,,page_watch,Possible intended meaning of earlier 'LM tree'; confirm company identity if revisited
+Bain & Company,Consulting,https://www.bain.com/careers/,https://www.bain.com/careers/,custom,,,page_watch,Discussed; no verified India Summer 2027 opening found
+GE Aerospace,Aerospace/engineering,https://careers.geaerospace.com/,https://careers.geaerospace.com/global/en/india-students-new-grads,custom,,,page_watch,"Discussed; Data Science Intern deadline previously listed as Sep 24, 2026; recheck status"
+Cisco,Networking/software,https://careers.cisco.com/,,custom,,,page_watch,Discussed; no verified India Summer 2027 opening found
+IQVIA,Healthcare technology/data,https://jobs.iqvia.com/,https://jobs.iqvia.com/,custom,,,page_watch,"Discussed; R1567860 deadline Sep 11, 2026 had passed"
+Electronic Arts (EA),Gaming/software,https://www.ea.com/careers,https://www.ea.com/careers/early-careers,custom,,,skip,Discussed; no verified India Summer 2027 opening found
+Microsoft,Software/hardware/cloud,https://careers.microsoft.com/,https://careers.microsoft.com/v2/global/en/students,custom,,,page_watch,Discussed; hardware engineering listing needs live requisition and eligibility recheck
+Twilio,Cloud communications/software,https://www.twilio.com/en-us/company/jobs,https://www.twilio.com/en-us/company/jobs,custom,,,page_watch,Discussed; India remote SWE Intern requisition 8190889 had location constraints; recheck status
+Google,Software/cloud/AI,https://www.google.com/about/careers/,https://www.google.com/about/careers/applications/,custom,,,page_watch,Discussed; previously surfaced India Summer 2027 roles were past deadline or branch-restricted
+Pearson,Education technology,https://pearson.jobs/,https://pearson.jobs/,custom,,,page_watch,Discussed; AI/ML and SWE intern listings need official live/status and eligibility recheck
+Meta,Software/social technology,https://www.metacareers.com/,https://www.metacareers.com/careerprograms/students,custom,,,needs_browser,Discussed; no verified India Summer 2027 opening found
+Uber,Mobility/technology,https://jobs.uber.com/,https://jobs.uber.com/en/teams/emerging-talent/,custom,,,page_watch,Discussed; no verified India Summer 2027 opening found
+Cloudflare,Internet infrastructure,https://www.cloudflare.com/careers/jobs/,https://www.cloudflare.com/careers/early-talent/,custom,,,page_watch,Discussed; no verified India Summer 2027 opening found
+Figma,Design software,https://www.figma.com/careers/,https://www.figma.com/careers/,custom,,,page_watch,"Discussed; Winter 2027 US listing seen, no verified India Summer 2027 opening"
+Datadog,Cloud monitoring/software,https://careers.datadoghq.com/,https://careers.datadoghq.com/early-careers/,custom,,,page_watch,"Discussed; Summer 2027 roles found in US, not India"
+Citadel,Quant finance/trading,https://www.citadel.com/careers/open-opportunities/,https://www.citadel.com/careers/internships/,custom,,,page_watch,Discussed; Sector Data Scientist US role and other international roles; no India role verified
+Palantir,Software/data platforms,https://jobs.lever.co/palantir,https://www.palantir.com/careers/,lever,palantir,,api,"Discussed; 2028-eligible international internships found, none in India"
+Bloomberg,Financial data/software,https://www.bloomberg.com/company/careers/,https://www.bloomberg.com/company/early-careers/,custom,,,page_watch,"Discussed; Singapore Analytics & Sales listing found, no verified India technical role"
+IMC Trading,Quant finance/trading,https://www.imc.com/in/careers/,https://www.imc.com/in/careers/students-graduates/,custom,,,page_watch,Discussed; Trading Internship/Launchpad for India; verify current application status
+Jane Street,Quant finance/trading,https://www.janestreet.com/join-jane-street/,https://www.janestreet.com/join-jane-street/internships/,custom,,,page_watch,Discussed; TDOE London and Strategy/Product NY listings previously surfaced; recheck status
+Henkel,Materials/chemicals/engineering,https://www.henkel.com/careers,https://www.henkel.com/careers/students,custom,,,page_watch,Discussed; three India Summer 2027 roles previously surfaced; verify current status
+Lam Research,Semiconductor equipment,https://opportunities.lamresearch.com/,https://opportunities.lamresearch.com/,custom,,,page_watch,Discussed; Engineering Intern 1 Bengaluru posting seen; recheck live status
+Aerosight,Drones/aerospace,https://www.aerosight.in/careers,https://www.aerosight.in/careers,custom,,,page_watch,Discussed; Mechanical Design Intern page seen; verify current opening
+Baker Hughes,Energy/engineering,https://careers.bakerhughes.com/,https://careers.bakerhughes.com/global/en/students-graduates,custom,,,page_watch,Discussed; Engineering & Technology Intern 2027; direct live requisition not confirmed
+Rolls-Royce,Aerospace/engineering,https://careers.rolls-royce.com/,https://careers.rolls-royce.com/en/students-and-graduates/india,custom,,,page_watch,"Discussed; India internship programme window mentioned, no individual live requisition confirmed"
+GE Vernova,Energy/engineering/technology,https://careers.gevernova.com/,https://careers.gevernova.com/,custom,,,page_watch,"Discussed; Digital Technology Development Program Intern R5052743, deadline previously Oct 9, 2026; recheck immediately"
+Citi,Finance/technology/analytics,https://jobs.citi.com/,https://jobs.citi.com/,custom,,,page_watch,Discussed; Services Summer Analyst page stopped accepting applications
+Deutsche Bank,Finance/technology,https://careers.db.com/,https://careers.db.com/students-graduates/,custom,,,page_watch,Discussed; India technology/data internships campus/partner-campus route
+GEP,Supply chain/procurement technology,https://www.gep.com/careers/,https://www.gep.com/careers/join-us/campus-connect/india,custom,,,page_watch,"Discussed; 2028 campus internship season, no public individual requisition verified"
+WRI India,Research/sustainability/technology,https://www.wri.org/careers,https://www.wri.org/careers,custom,,,page_watch,"Discussed; Enterprise Systems Intern deadline Sep 23, 2026 had passed"
+Amazon,E-commerce/cloud/software,https://www.amazon.jobs/,https://www.amazon.jobs/content/en/career-programs/university,custom,,,page_watch,Discussed; several 2027 intern requisitions; batch/branch varies; recheck each
+Qualcomm,Semiconductors/engineering,https://careers.qualcomm.com/,,custom,,,page_watch,Discussed; US Mechanical Engineering Intern Summer 2027 listing; visa/work authorization check
+HPE,Enterprise IT/cloud,https://careers.hpe.com/,https://careers.hpe.com/early-careers,custom,,,page_watch,Discussed; no specific 2028 India internship confirmed
+Rubrik,Cybersecurity/software,https://www.rubrik.com/company/careers,https://www.rubrik.com/company/careers,custom,,,page_watch,Discussed; winter SWE listing restricted to 2027/circuital branches
+Accenture,Consulting/technology,https://www.accenture.com/in-en/careers,https://www.accenture.com/in-en/careers/local/students,custom,,,page_watch,Discussed; no verified direct 2028 India internship found
+PhonePe,Fintech,https://www.phonepe.com/careers/,https://www.phonepe.com/careers/,custom,,,page_watch,Discussed; no verified active 2028 technical internship found
+Mastercard,Payments/technology,https://careers.mastercard.com/,https://careers.mastercard.com/us/en/students,custom,,,page_watch,Discussed; no verified India 2028 technical internship found
+PayPal,Fintech,https://www.paypal.com/us/webapps/mpp/jobs,https://www.paypal.com/us/webapps/mpp/jobs,custom,,,page_watch,Discussed; India summer programme cycle/eligibility uncertain
+American Express,Finance/technology,https://www.americanexpress.com/en-us/careers/,,custom,,,page_watch,Discussed; no current public India internship confirmed
+Razorpay,Fintech,https://razorpay.com/jobs/,https://razorpay.com/jobs/,custom,,,page_watch,Discussed; AI Builder/Buildathon previously mentioned; verify current status
+Cohesity,Data security/software,https://www.cohesity.com/company/careers/,https://www.cohesity.com/company/careers/,custom,,,page_watch,Discussed; no verified current India 2028 internship
+Visa,Payments/technology,https://corporate.visa.com/en/careers.html,,custom,,,page_watch,Discussed; official India Summer Intern evergreen listing; batch eligibility not confirmed
+Apple,Consumer technology,https://jobs.apple.com/,https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN,custom,,,page_watch,Discussed; no India Summer 2027 role verified
+Schonfeld,Quant finance/trading,https://www.schonfeld.com/careers/,https://www.schonfeld.com/careers/,custom,,,page_watch,Discussed; US 2027 technology internship previously surfaced; recheck eligibility
+BlackRock,Finance/technology,https://careers.blackrock.com/,https://careers.blackrock.com/students-and-graduates,custom,,,page_watch,"Discussed; APAC 2027 internships, no India match verified"
+Wells Fargo,Finance/technology,https://www.wellsfargojobs.com/,https://www.wellsfargojobs.com/en/early-careers/,custom,,,page_watch,Discussed; specific India Technology Program Intern application was closed
+Bank of America,Finance/technology,https://careers.bankofamerica.com/,https://careers.bankofamerica.com/en-us/students,custom,,,page_watch,Discussed; prior Summer Analyst listing deadline passed
+Adobe,Software/AI,https://careers.adobe.com/,,custom,,,page_watch,Discussed; no verified current India 2028 internship
+Flipkart,E-commerce/technology,https://www.flipkartcareers.com/,https://www.flipkartcareers.com/,custom,,,page_watch,Discussed; GRiD is a separate competition and previous cycle closed
+Infosys,IT services,https://www.infosys.com/careers/,https://www.infosys.com/careers/,custom,,,page_watch,Discussed in hackathon/opportunity monitoring context
+HP,Computing hardware,https://jobs.hp.com/,https://jobs.hp.com/,custom,,,page_watch,Discussed; no verified 2028 Summer internship confirmed
+HSBC,Banking/technology,https://www.hsbc.com/careers,https://www.hsbc.com/careers/students-and-graduates,custom,,,page_watch,Discussed; Hong Kong Engineering Internship found; no India Summer 2027 public match
+Tower Research Capital,Quant finance/trading,https://www.tower-research.com/open-positions/,https://www.tower-research.com/open-positions/,custom,,,page_watch,Discussed; AI/ML and quant internships previously surfaced; recheck live status
+Revolut,Fintech,https://www.revolut.com/careers/,https://www.revolut.com/careers/,custom,,,page_watch,Discussed; 2027 SWE/Data internships in international locations
+NewSpace Research & Technologies,Aerospace/defence technology,https://newspace.co.in/,,custom,,,page_watch,Discussed; previous internship links stale/unverified
+Perceptive Analytics,Data analytics,https://www.perceptive-analytics.com/,https://www.perceptive-analytics.com/careers/,custom,,,page_watch,"Discussed; Advanced Data Analytics Intern lead, verify direct application"
+Oxane Partners,Financial analytics/technology,https://www.oxanepartners.com/careers,https://www.oxanepartners.com/careers,custom,,,page_watch,"Discussed; DevOps intern lead, official destination/status uncertain"
+Sprinklr,Customer experience software,https://www.sprinklr.com/careers/,https://www.sprinklr.com/careers/,custom,,,page_watch,"Discussed; UX/design intern roles, no verified 2028 SWE/AI opening"
+Caterpillar,Industrial/manufacturing,https://careers.caterpillar.com/,,custom,,,page_watch,Discussed; China Engineering Intern deadline previously passed
+Synopsys,Semiconductors/EDA,https://careers.synopsys.com/,https://careers.synopsys.com/,custom,,,page_watch,Discussed; CFD internship required Master's/2027 pass-out; NXP/Synopsys leads excluded as fit where applicable
+NXP Semiconductors,Semiconductors,,https://nxp.wd3.myworkdayjobs.com/careers,workday,nxp/careers,,api,Discussed; Technical Internship 2027 electronics-focused
+Wabtec,Rail/engineering,https://careers.wabtec.com/,https://careers.wabtec.com/,custom,,,page_watch,Discussed; a Bengaluru engineering intern requisition had expired
+Fortive,Industrial technology,https://careers.fortive.com/,https://careers.fortive.com/,custom,,,page_watch,Discussed; SWE intern lead not fully verified
+Teleperformance,Business services/technology,https://careers.teleperformance.com/,https://careers.teleperformance.com/,custom,,,skip,Discussed; data analytics intern lead was aggregator-only/unverified
+Honeywell,Industrial/aerospace/automation,https://careers.honeywell.com/,https://careers.honeywell.com/,custom,,,skip,Discussed; bachelor's intern lead needs specific live requisition verification
+Unisys,IT/AI/enterprise systems,https://unisys.wd5.myworkdayjobs.com/External,https://www.unisys.com/careers/,workday,unisys/External,,api,Discussed; AI Engineering Intern REQ574280; eligibility/status needs recheck
+Stripe,Payments/software,https://stripe.com/jobs,https://stripe.com/jobs,custom,,,page_watch,"Discussed; Bengaluru SWE intern lead, Mechanical eligibility mismatch"
+NHAI,Public infrastructure,https://nhai.gov.in/,https://nhai.gov.in/,custom,,,page_watch,"Discussed; NHAI Winter/Term Internship 2026–27 announcement, disciplines/eligibility require checking"
+LSEG,Financial data/technology,https://www.lseg.com/en/careers,https://www.lseg.com/en/careers/graduate-internship-programmes,custom,,,page_watch,Discussed; India engineering/technology internship eligibility for 2028 unclear
+LM Tree,Unconfirmed company name,,,custom,,,needs_url,User said 'LM tree'; assistant suggested it might mean L&T. Do not assume without clarification
+Swiggy,Consumer tech (India),https://careers.swiggy.com/,,custom,,,page_watch,added in bulk; URL unverified
+Zomato,Consumer tech (India),https://www.zomato.com/careers,,custom,,,skip,added in bulk; URL unverified
+Meesho,Consumer tech (India),https://www.meesho.io/jobs,,custom,,,page_watch,added in bulk; URL unverified
+CRED,Fintech (India),https://careers.cred.club/,,custom,,,page_watch,added in bulk; URL unverified
+Groww,Fintech (India),https://groww.in/careers,,custom,,,page_watch,added in bulk; URL unverified
+Zoho,Software (India),https://www.zoho.com/careers/,,custom,,,page_watch,added in bulk; URL unverified
+Nvidia,Semiconductors / AI,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/,custom,,,page_watch,added in bulk; URL unverified
+AMD,Semiconductors,https://careers.amd.com/,,custom,,,page_watch,added in bulk; URL unverified
+Intel,Semiconductors,https://jobs.intel.com/,,custom,,,page_watch,added in bulk; URL unverified
+Oracle,Enterprise software,https://careers.oracle.com/,,custom,,,page_watch,added in bulk; URL unverified
+Databricks,Data / AI,https://www.databricks.com/company/careers,,custom,,,page_watch,added in bulk; URL unverified
+Snowflake,Data / cloud,https://careers.snowflake.com/,,custom,,,page_watch,added in bulk; URL unverified
+Nutanix,Cloud infrastructure,https://careers.nutanix.com/,,custom,,,page_watch,added in bulk; URL unverified
+Airbnb,Consumer tech,https://careers.airbnb.com/,,custom,,,page_watch,added in bulk; URL unverified
+Coinbase,Fintech / crypto,https://www.coinbase.com/careers,,custom,,,skip,added in bulk; URL unverified
+MongoDB,Data / software,https://www.mongodb.com/careers,,custom,,,page_watch,added in bulk; URL unverified
+DE Shaw,Quant / trading,https://www.deshaw.com/careers,,custom,,,page_watch,added in bulk; URL unverified
+Optiver,Quant / trading,https://optiver.com/working-at-optiver/career-opportunities/,,custom,,,page_watch,added in bulk; URL unverified
+WorldQuant,Quant / trading,https://www.worldquant.com/careers/,,custom,,,page_watch,added in bulk; URL unverified
+Morgan Stanley,Finance,https://www.morganstanley.com/careers,,custom,,,page_watch,added in bulk; URL unverified

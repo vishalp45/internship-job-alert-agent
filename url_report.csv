@@ -1,0 +1,184 @@
+company,column,url,verdict,status,final_url,title
+Atlassian,early_careers_url,https://www.atlassian.com/company/careers/earlycareers,OK,200,https://www.atlassian.com/company/careers/earlycareers,Atlassian Internships: Students and New Grads | Atlassian
+Atlassian,careers_url,https://www.atlassian.com/company/careers/all-jobs,OK,200,https://www.atlassian.com/company/careers/all-jobs,Atlassian Jobs: View Listings for Open Positions | Atlassian
+Postman,early_careers_url,https://www.postman.com/company/careers/,OK,200,https://www.postman.com/company/careers/,Careers | Postman
+Postman,careers_url,https://www.postman.com/company/careers/open-positions/,OK,200,https://www.postman.com/company/careers/open-positions/,Open Positions at Postman | Join Our Team
+BrowserStack,early_careers_url,https://www.browserstack.com/careers,OK,200,https://www.browserstack.com/careers,Jobs at BrowserStack
+BrowserStack,careers_url,https://www.browserstack.com/careers,OK,200,https://www.browserstack.com/careers,Jobs at BrowserStack
+Chargebee,early_careers_url,https://www.chargebee.com/careers/,OK,200,https://www.chargebee.com/company/careers/,Join a Global Product Company | Hiring Globally
+Chargebee,careers_url,https://www.chargebee.com/careers/,OK,200,https://www.chargebee.com/company/careers/,Join a Global Product Company | Hiring Globally
+Salesforce,early_careers_url,https://www.salesforce.com/company/careers/university/internships/,OK,200,https://www.salesforce.com/company/careers/university/internships/?bc=OTH,Salesforce Internships | Salesforce Careers | Salesforce
+Salesforce,careers_url,https://careers.salesforce.com/,OK,200,https://www.salesforce.com/company/careers/?bc=OTH,Salesforce Careers | Build the Future of AI with Us | Salesforce
+ServiceNow,early_careers_url,https://careers.servicenow.com/early-careers/,OK,200,https://careers.servicenow.com/early-careers/,Early Careers | ServiceNow Careers
+ServiceNow,careers_url,https://careers.servicenow.com/,OK,200,https://careers.servicenow.com/,ServiceNow Careers - Join the team putting AI to work for people. | ServiceNow C
+SAP,early_careers_url,https://jobs.sap.com/en/students-and-graduates/students/internships/,OK,200,https://jobs.sap.com/en/students-and-graduates/students/internships/,Internships | SAP Careers
+SAP,careers_url,https://jobs.sap.com/,OK,200,https://jobs.sap.com/en/,Build a future at SAP | SAP Careers
+Workday,early_careers_url,https://www.workday.com/en-in/company/careers/early-career.html,OK,200,https://www.workday.com/en-in/company/careers/early-career.html,Workday Early Career: Intern and Co-Op Programs | Workday Careers | Workday Indi
+Workday,careers_url,https://workday.wd5.myworkdayjobs.com/Workday,OK,200,https://workday.wd5.myworkdayjobs.com/Workday,
+Walmart,early_careers_url,https://careers.walmart.com/us/en/career-areas/students-and-grads,OK,200,https://careers.walmart.com/us/en/career-areas/students-and-grads,
+Walmart,careers_url,https://careers.walmart.com/,OK,200,https://careers.walmart.com/us/en/home,Walmart Careers
+Target,early_careers_url,https://corporate.target.com/careers/career-areas/intern-entry-level/internships,OK,200,https://corporate.target.com/careers/career-areas/intern-entry-level/internships,Internships
+Target,careers_url,https://corporate.target.com/careers,OK,200,https://corporate.target.com/careers,Jobs at Target
+JPMorgan Chase (JPMC),early_careers_url,https://www.jpmorganchase.com/careers/students,NOT_FOUND,404,https://www.jpmorganchase.com/careers/students,PAGE NOT FOUND | JPMorganChase
+JPMorgan Chase (JPMC),careers_url,https://www.jpmorganchase.com/careers/explore-opportunities/students-and-graduates,OK,200,https://www.jpmorganchase.com/careers/explore-opportunities/students-and-graduates,Students and graduates
+Goldman Sachs,early_careers_url,https://www.goldmansachs.com/careers/students/programs-and-internships,OK,200,https://www.goldmansachs.com/careers/students/programs-and-internships,Programs and Internships | Goldman Sachs
+Goldman Sachs,careers_url,https://www.goldmansachs.com/careers,OK,200,https://www.goldmansachs.com/careers,Goldman Sachs Careers | Goldman Sachs
+Intuit,early_careers_url,https://www.intuit.com/in/careers/internships/,BLOCKED,429,https://www.intuit.com/in/careers/internships/,
+Intuit,careers_url,https://jobs.intuit.com/,OK,200,https://jobs.intuit.com/,Working at Intuit
+LTIMindtree,early_careers_url,https://www.ltimindtree.com/careers/,OK,200,https://www.ltm.com/careers,Careers at LTM: Empowering Outcreators to Innovate and Lead
+LTIMindtree,careers_url,https://www.ltimindtree.com/careers/,OK,200,https://www.ltm.com/careers,Careers at LTM: Empowering Outcreators to Innovate and Lead
+Mphasis,early_careers_url,https://careers.mphasis.com/home/hot-jobs/category/campus-programs.html,OK,200,https://careers.mphasis.com/home/hot-jobs/category/campus-programs.html,Campus Hires at Best Tech Company | Foundation Programs For Campus
+Mphasis,careers_url,https://careers.mphasis.com/,OK,200,https://careers.mphasis.com/home.html,Careers at Mphasis | Explore Technology and IT Careers at Mphasis
+Texas Instruments,early_careers_url,https://careers.ti.com/,OK,200,https://careers.ti.com/en/sites/CX,Texas Instruments
+Texas Instruments,careers_url,https://careers.ti.com/en/sites/CX/jobs,OK,200,https://careers.ti.com/en/sites/CX/jobs,Texas Instruments
+L&T / Larsen & Toubro,early_careers_url,https://www.larsentoubro.com/careers/,OK,200,https://www.larsentoubro.com/careers,
+L&T / Larsen & Toubro,careers_url,https://www.larsentoubro.com/careers/,OK,200,https://www.larsentoubro.com/careers,
+Bain & Company,early_careers_url,https://www.bain.com/careers/,OK,200,https://www.bain.com/careers/,Careers at Bain | Bain &amp; Company
+Bain & Company,careers_url,https://www.bain.com/careers/,OK,200,https://www.bain.com/careers/,Careers at Bain | Bain &amp; Company
+GE Aerospace,early_careers_url,https://careers.geaerospace.com/global/en/india-students-new-grads,OK,200,https://careers.geaerospace.com/global/en/india-students-new-grads,India Students &amp; New Grads | GE Aerospace
+GE Aerospace,careers_url,https://careers.geaerospace.com/,OK,200,https://careers.geaerospace.com/global/en,
+Cisco,careers_url,https://careers.cisco.com/,OK,200,https://careers.cisco.com/global/en,
+IQVIA,early_careers_url,https://jobs.iqvia.com/,BLOCKED,403,https://jobs.iqvia.com/,Just a moment...
+IQVIA,careers_url,https://jobs.iqvia.com/,BLOCKED,403,https://jobs.iqvia.com/,Just a moment...
+Electronic Arts (EA),early_careers_url,https://www.ea.com/careers/early-careers,ERROR,0,,ConnectionError
+Electronic Arts (EA),careers_url,https://www.ea.com/careers,ERROR,0,,ConnectionError
+Microsoft,early_careers_url,https://careers.microsoft.com/v2/global/en/students,OK,200,https://careers.microsoft.com/v2/global/en/students,Early in profession | Microsoft Careers
+Microsoft,careers_url,https://careers.microsoft.com/,OK,200,https://careers.microsoft.com/v2/global/en/home.html,Home | Microsoft Careers
+Twilio,early_careers_url,https://www.twilio.com/en-us/company/jobs,OK,200,https://jobs.twilio.com/careers,Careers at Twilio
+Twilio,careers_url,https://www.twilio.com/en-us/company/jobs,OK,200,https://jobs.twilio.com/careers,Careers at Twilio
+Google,early_careers_url,https://www.google.com/about/careers/applications/,OK,200,https://www.google.com/about/careers/applications/,
+Google,careers_url,https://www.google.com/about/careers/,OK,200,https://www.google.com/about/careers/applications/,
+Pearson,early_careers_url,https://pearson.jobs/,OK,200,https://pearson.jobs/,Home | Pearson
+Pearson,careers_url,https://pearson.jobs/,OK,200,https://pearson.jobs/,Home | Pearson
+Meta,early_careers_url,https://www.metacareers.com/careerprograms/students,ERROR,400,https://www.metacareers.com/careerprograms/students,Error
+Meta,careers_url,https://www.metacareers.com/,ERROR,400,https://www.metacareers.com/,Error
+Uber,early_careers_url,https://jobs.uber.com/en/teams/emerging-talent/,OK,200,https://jobs.uber.com/en/teams/emerging-talent/,Emerging Talent
+Uber,careers_url,https://jobs.uber.com/,OK,200,https://jobs.uber.com/en/,Uber Careers
+Cloudflare,early_careers_url,https://www.cloudflare.com/careers/early-talent/,OK,200,https://www.cloudflare.com/careers/early-talent/,
+Cloudflare,careers_url,https://www.cloudflare.com/careers/jobs/,OK,200,https://www.cloudflare.com/careers/jobs/,Careers at Cloudflare â Open Positions | Cloudflare
+Figma,early_careers_url,https://www.figma.com/careers/,OK,200,https://www.figma.com/careers/,Careers at Figma
+Figma,careers_url,https://www.figma.com/careers/,OK,200,https://www.figma.com/careers/,Careers at Figma
+Datadog,early_careers_url,https://careers.datadoghq.com/early-careers/,OK,200,https://careers.datadoghq.com/early-careers/,Early Career &amp; Internships | Datadog Careers
+Datadog,careers_url,https://careers.datadoghq.com/,OK,200,https://careers.datadoghq.com/,Join Our Pack | Datadog Careers
+Citadel,early_careers_url,https://www.citadel.com/careers/internships/,BLOCKED,403,https://www.citadel.com/careers/internships/,Just a moment...
+Citadel,careers_url,https://www.citadel.com/careers/open-opportunities/,BLOCKED,403,https://www.citadel.com/careers/open-opportunities/,Just a moment...
+Palantir,early_careers_url,https://www.palantir.com/careers/,OK,200,https://www.palantir.com/careers/,Careers
+Palantir,careers_url,https://jobs.lever.co/palantir,OK,200,https://jobs.lever.co/palantir,Palantir Technologies
+Bloomberg,early_careers_url,https://www.bloomberg.com/company/early-careers/,BLOCKED,403,https://www.bloomberg.com/company/early-careers/,Bloomberg - Are you a robot?
+Bloomberg,careers_url,https://www.bloomberg.com/company/careers/,BLOCKED,403,https://www.bloomberg.com/company/careers/,Bloomberg - Are you a robot?
+IMC Trading,early_careers_url,https://www.imc.com/in/careers/students-graduates/,OK,200,https://www.imc.com/in/careers/students-graduates/,Students and Graduates Overview IN | IMC Trading
+IMC Trading,careers_url,https://www.imc.com/in/careers/,OK,200,https://www.imc.com/in/careers/,Careers IN | IMC Trading
+Jane Street,early_careers_url,https://www.janestreet.com/join-jane-street/internships/,OK,200,https://www.janestreet.com/join-jane-street/internships/,Internships :: Jane Street
+Jane Street,careers_url,https://www.janestreet.com/join-jane-street/,OK,200,https://www.janestreet.com/join-jane-street/overview/,Overview :: Jane Street
+Henkel,early_careers_url,https://www.henkel.com/careers/students,OK,200,https://www.henkel.com/careers/career-opportunities,Career Opportunities
+Henkel,careers_url,https://www.henkel.com/careers,OK,200,https://www.henkel.com/careers,Careers
+Lam Research,early_careers_url,https://opportunities.lamresearch.com/,OK,200,https://opportunities.lamresearch.com/,Career Search | Lam Research
+Lam Research,careers_url,https://opportunities.lamresearch.com/,OK,200,https://opportunities.lamresearch.com/,Career Search | Lam Research
+Aerosight,early_careers_url,https://www.aerosight.in/careers,OK,200,https://www.aerosight.in/careers,
+Aerosight,careers_url,https://www.aerosight.in/careers,OK,200,https://www.aerosight.in/careers,
+Baker Hughes,early_careers_url,https://careers.bakerhughes.com/global/en/students-graduates,OK,200,https://careers.bakerhughes.com/global/en/students-graduates,
+Baker Hughes,careers_url,https://careers.bakerhughes.com/,OK,200,https://careers.bakerhughes.com/,
+Rolls-Royce,early_careers_url,https://careers.rolls-royce.com/en/students-and-graduates/india,OK,200,https://careers.rolls-royce.com/en/students-and-graduates/india,India Student & Graduate Programmes - Rolls-Royce | Rolls-Royce
+Rolls-Royce,careers_url,https://careers.rolls-royce.com/,OK,200,https://careers.rolls-royce.com/en,"Rolls-Royce Jobs & Careers | Engineering, Aerospace, Apprenticeships, Graduates "
+GE Vernova,early_careers_url,https://careers.gevernova.com/,OK,200,https://careers.gevernova.com/,Careers at GE Vernova | Join the Energy of Change
+GE Vernova,careers_url,https://careers.gevernova.com/,OK,200,https://careers.gevernova.com/,Careers at GE Vernova | Join the Energy of Change
+Citi,early_careers_url,https://jobs.citi.com/,OK,200,https://jobs.citi.com/,Citi Careers | Find Your Next Opportunity
+Citi,careers_url,https://jobs.citi.com/,OK,200,https://jobs.citi.com/,Citi Careers | Find Your Next Opportunity
+Deutsche Bank,early_careers_url,https://careers.db.com/students-graduates/,OK,200,https://careers.db.com/students-graduates/,Students and Graduates – Deutsche Bank Careers
+Deutsche Bank,careers_url,https://careers.db.com/,OK,200,https://careers.db.com/,Home – Deutsche Bank Careers
+GEP,early_careers_url,https://www.gep.com/careers/join-us/campus-connect/india,OK,200,https://www.gep.com/careers/join-us/campus-connect/india,India | GEP
+GEP,careers_url,https://www.gep.com/careers/,OK,200,https://www.gep.com/careers,Explore a Career in Procurement Technology with Brightest Minds | GEP
+WRI India,early_careers_url,https://www.wri.org/careers,OK,200,https://www.wri.org/careers,Careers | World Resources Institute
+WRI India,careers_url,https://www.wri.org/careers,OK,200,https://www.wri.org/careers,Careers | World Resources Institute
+Amazon,early_careers_url,https://www.amazon.jobs/content/en/career-programs/university,OK,200,https://www.amazon.jobs/content/en/career-programs/university,Amazon University Talent Acquisition (AUTA)
+Amazon,careers_url,https://www.amazon.jobs/,OK,200,https://www.amazon.jobs/en/,"Amazon Careers: Impact the Future, Today"
+Qualcomm,careers_url,https://careers.qualcomm.com/,OK,200,https://careers.qualcomm.com/careers,
+HPE,early_careers_url,https://careers.hpe.com/early-careers,OK,200,https://careers.hpe.com/early-careers,Student &amp; graduate opportunities in India | HPE Careers
+HPE,careers_url,https://careers.hpe.com/,OK,200,https://careers.hpe.com/us/en,
+Rubrik,early_careers_url,https://www.rubrik.com/company/careers,BLOCKED,403,https://www.rubrik.com/company/careers,Access Denied
+Rubrik,careers_url,https://www.rubrik.com/company/careers,BLOCKED,403,https://www.rubrik.com/company/careers,Access Denied
+Accenture,early_careers_url,https://www.accenture.com/in-en/careers/local/students,OK,200,https://www.accenture.com/in-en/careers/life-at-accenture/entry-level,Early Career Job Opportunities | Accenture
+Accenture,careers_url,https://www.accenture.com/in-en/careers,OK,200,https://www.accenture.com/in-en/careers,Accenture Careers &amp; Job Opportunities
+PhonePe,early_careers_url,https://www.phonepe.com/careers/,OK,200,https://www.phonepe.com/careers/,PhonePe - Careers
+PhonePe,careers_url,https://www.phonepe.com/careers/,OK,200,https://www.phonepe.com/careers/,PhonePe - Careers
+Mastercard,early_careers_url,https://careers.mastercard.com/us/en/students,OK,200,https://careers.mastercard.com/us/en/early-careers,Early Careers at Mastercard
+Mastercard,careers_url,https://careers.mastercard.com/,OK,200,https://careers.mastercard.com/us/en/,
+PayPal,early_careers_url,https://www.paypal.com/us/webapps/mpp/jobs,OK,200,https://careers.pypl.com/home/,PayPal Careers - Opening Possibilities for all
+PayPal,careers_url,https://www.paypal.com/us/webapps/mpp/jobs,OK,200,https://careers.pypl.com/home/,PayPal Careers - Opening Possibilities for all
+American Express,careers_url,https://www.americanexpress.com/en-us/careers/,OK,200,https://www.americanexpress.com/en-us/careers/,American Express Careers &amp; Job Openings | Amex Careers US
+Razorpay,early_careers_url,https://razorpay.com/jobs/,OK,200,https://razorpay.com/careers/,"Razorpay Careers | Jobs, Hiring &amp; Career Opportunities at Razorpay"
+Razorpay,careers_url,https://razorpay.com/jobs/,OK,200,https://razorpay.com/careers/,"Razorpay Careers | Jobs, Hiring &amp; Career Opportunities at Razorpay"
+Cohesity,early_careers_url,https://www.cohesity.com/company/careers/,OK,200,https://www.cohesity.com/careers/,"Open Positions, Jobs, Employment Opportunities | Cohesity"
+Cohesity,careers_url,https://www.cohesity.com/company/careers/,OK,200,https://www.cohesity.com/careers/,"Open Positions, Jobs, Employment Opportunities | Cohesity"
+Visa,careers_url,https://corporate.visa.com/en/careers.html,OK,200,https://corporate.visa.com/en/careers.html,Visa careers: Progress starts with you | Visa
+Apple,early_careers_url,https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN,OK,200,https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN,Search Jobs - Students: Internships - Jobs - Careers at Apple
+Apple,careers_url,https://jobs.apple.com/,OK,200,https://www.apple.com/careers/us/,Apple Roles and Opportunities - Careers at Apple
+Schonfeld,early_careers_url,https://www.schonfeld.com/careers/,OK,200,https://www.schonfeld.com/careers/,Careers - Schonfeld Strategic Advisors
+Schonfeld,careers_url,https://www.schonfeld.com/careers/,OK,200,https://www.schonfeld.com/careers/,Careers - Schonfeld Strategic Advisors
+BlackRock,early_careers_url,https://careers.blackrock.com/students-and-graduates,OK,200,https://careers.blackrock.com/students-and-graduates,Students and Graduates at BlackRock
+BlackRock,careers_url,https://careers.blackrock.com/,OK,200,https://careers.blackrock.com/,Working at BlackRock
+Wells Fargo,early_careers_url,https://www.wellsfargojobs.com/en/early-careers/,OK,200,https://www.wellsfargojobs.com/en/early-careers/,Early Careers | Wells Fargo
+Wells Fargo,careers_url,https://www.wellsfargojobs.com/,OK,200,https://www.wellsfargojobs.com/,Careers | Wells Fargo
+Bank of America,early_careers_url,https://careers.bankofamerica.com/en-us/students,OK,200,https://careers.bankofamerica.com/en-us/students,Bank of America Jobs &amp; Resources for Students
+Bank of America,careers_url,https://careers.bankofamerica.com/,OK,200,https://careers.bankofamerica.com/en-us,Bank of America Careers Site - Apply at Bank of America
+Adobe,careers_url,https://careers.adobe.com/,OK,200,https://careers.adobe.com/us/en,
+Flipkart,early_careers_url,https://www.flipkartcareers.com/,OK,200,https://www.flipkartcareers.com/,Flipkart Careers - Maximise Your Potential
+Flipkart,careers_url,https://www.flipkartcareers.com/,OK,200,https://www.flipkartcareers.com/,Flipkart Careers - Maximise Your Potential
+Infosys,early_careers_url,https://www.infosys.com/careers/,BLOCKED,403,https://www.infosys.com/careers/,Access Denied
+Infosys,careers_url,https://www.infosys.com/careers/,BLOCKED,403,https://www.infosys.com/careers/,Access Denied
+HP,early_careers_url,https://jobs.hp.com/,OK,200,https://jobs.hp.com/,Find career opportunities at HP - HP Careers
+HP,careers_url,https://jobs.hp.com/,OK,200,https://jobs.hp.com/,Find career opportunities at HP - HP Careers
+HSBC,early_careers_url,https://www.hsbc.com/careers/students-and-graduates,OK,200,https://www.hsbc.com/careers/students-and-graduates,Students and graduates | Careers | HSBC Holdings plc
+HSBC,careers_url,https://www.hsbc.com/careers,OK,200,https://www.hsbc.com/careers,Careers: Discover opportunities | HSBC Holdings plc
+Tower Research Capital,early_careers_url,https://www.tower-research.com/open-positions/,OK,200,https://tower-research.com/open-positions/,open-positions - Tower Research Capital
+Tower Research Capital,careers_url,https://www.tower-research.com/open-positions/,OK,200,https://tower-research.com/open-positions/,open-positions - Tower Research Capital
+Revolut,early_careers_url,https://www.revolut.com/careers/,BLOCKED,403,https://www.revolut.com/careers/,
+Revolut,careers_url,https://www.revolut.com/careers/,BLOCKED,403,https://www.revolut.com/careers/,
+NewSpace Research & Technologies,careers_url,https://newspace.co.in/,OK,200,https://newspace.co.in/,"NewSpace Research and Technologies - Engineering tomorrow&#039;s missions, today"
+Perceptive Analytics,early_careers_url,https://www.perceptive-analytics.com/careers/,OK,200,https://www.perceptive-analytics.com/careers/,Careers | Perceptive Analytics
+Perceptive Analytics,careers_url,https://www.perceptive-analytics.com/,OK,200,https://www.perceptive-analytics.com/,Perceptive Analytics
+Oxane Partners,early_careers_url,https://www.oxanepartners.com/careers,OK,200,https://www.oxanepartners.com/careers,Explore Career Opportunities at Oxane Partners
+Oxane Partners,careers_url,https://www.oxanepartners.com/careers,OK,200,https://www.oxanepartners.com/careers,Explore Career Opportunities at Oxane Partners
+Sprinklr,early_careers_url,https://www.sprinklr.com/careers/,OK,200,https://www.sprinklr.com/careers/,Sprinklr Careers
+Sprinklr,careers_url,https://www.sprinklr.com/careers/,OK,200,https://www.sprinklr.com/careers/,Sprinklr Careers
+Caterpillar,careers_url,https://careers.caterpillar.com/,OK,200,https://careers.caterpillar.com/en/,Do The Work That Matters | Caterpillar Careers
+Synopsys,early_careers_url,https://careers.synopsys.com/,OK,200,https://careers.synopsys.com/,Working at Synopsys
+Synopsys,careers_url,https://careers.synopsys.com/,OK,200,https://careers.synopsys.com/,Working at Synopsys
+NXP Semiconductors,early_careers_url,https://nxp.wd3.myworkdayjobs.com/careers,OK,200,https://nxp.wd3.myworkdayjobs.com/careers,
+Wabtec,early_careers_url,https://careers.wabtec.com/,OK,200,https://careers.wabtec.com/,Grow with us. Move the world with impact. | Wabtec
+Wabtec,careers_url,https://careers.wabtec.com/,OK,200,https://careers.wabtec.com/,Grow with us. Move the world with impact. | Wabtec
+Fortive,early_careers_url,https://careers.fortive.com/,OK,200,https://careers.fortive.com/,Careers at Fortive | For you. For us. For growth.
+Fortive,careers_url,https://careers.fortive.com/,OK,200,https://careers.fortive.com/,Careers at Fortive | For you. For us. For growth.
+Teleperformance,early_careers_url,https://careers.teleperformance.com/,ERROR,0,,ConnectionError
+Teleperformance,careers_url,https://careers.teleperformance.com/,ERROR,0,,ConnectionError
+Honeywell,early_careers_url,https://careers.honeywell.com/,OK,200,https://careers.honeywell.com/en/sites/Honeywell,Honeywell
+Honeywell,careers_url,https://careers.honeywell.com/,OK,200,https://careers.honeywell.com/en/sites/Honeywell,Honeywell
+Unisys,early_careers_url,https://www.unisys.com/careers/,OK,200,https://www.unisys.com/careers/,Careers | Unisys
+Unisys,careers_url,https://unisys.wd5.myworkdayjobs.com/External,OK,200,https://unisys.wd5.myworkdayjobs.com/External,
+Stripe,early_careers_url,https://stripe.com/jobs,OK,200,https://stripe.com/in/careers,Stripe Careers | Shape the Future of the Global Economy
+Stripe,careers_url,https://stripe.com/jobs,OK,200,https://stripe.com/in/careers,Stripe Careers | Shape the Future of the Global Economy
+NHAI,early_careers_url,https://nhai.gov.in/,OK,200,https://nhai.gov.in/,"National Highways Authority of India, Ministry of Road Transport & Highways, Gov"
+NHAI,careers_url,https://nhai.gov.in/,OK,200,https://nhai.gov.in/,"National Highways Authority of India, Ministry of Road Transport & Highways, Gov"
+LSEG,early_careers_url,https://www.lseg.com/en/careers/graduate-internship-programmes,OK,200,https://www.lseg.com/en/careers/graduate-internship-programmes,LSEG Early careers programmes | LSEG
+LSEG,careers_url,https://www.lseg.com/en/careers,OK,200,https://www.lseg.com/en/careers,Careers | LSEG
+Swiggy,careers_url,https://careers.swiggy.com/,OK,200,https://careers.swiggy.in:443/,"Swiggy Careers - Build, Scale, Deliver India's Everyday Needs"
+Zomato,careers_url,https://www.zomato.com/careers,OK,200,https://www.eternal.com/careers/,Careers - Hiring at Eternal
+Meesho,careers_url,https://www.meesho.io/jobs,OK,200,https://www.meesho.io/jobs,"Meesho Jobs | Meesho Careers, Best Startup Jobs in India"
+CRED,careers_url,https://careers.cred.club/,OK,200,https://careers.cred.club/,CRED: Careers
+Groww,careers_url,https://groww.in/careers,OK,200,https://groww.in/careers,Careers at Groww - Job Openings &amp; Vacancy
+Zoho,careers_url,https://www.zoho.com/careers/,OK,200,https://www.zoho.com/careers/,Zoho Corporation | Careers
+Nvidia,early_careers_url,https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/,OK,200,https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/,
+Nvidia,careers_url,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,OK,200,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,
+AMD,careers_url,https://careers.amd.com/,OK,200,https://careers.amd.com/careers-home/jobs,AMD Jobs and Career Opportunities | Search Open Roles
+Intel,careers_url,https://jobs.intel.com/,BLOCKED,403,https://corpredirect.intel.com/Redirector/404Redirector.aspx?404;https://jobs.intel.com/,Access Denied
+Oracle,careers_url,https://careers.oracle.com/,OK,200,https://careers.oracle.com/en/sites/jobsearch,Oracle
+Databricks,careers_url,https://www.databricks.com/company/careers,OK,200,https://www.databricks.com/company/careers,
+Snowflake,careers_url,https://careers.snowflake.com/,OK,200,https://careers.snowflake.com/us/en,Join the Snowflake Team | Snowflake Careers
+Nutanix,careers_url,https://careers.nutanix.com/,OK,200,https://careers.nutanix.com/en/,Careers at Nutanix: Join Our People Powered Teams | Nutanix Careers
+Airbnb,careers_url,https://careers.airbnb.com/,OK,200,https://careers.airbnb.com/,Home - Careers at Airbnb
+Coinbase,careers_url,https://www.coinbase.com/careers,ERROR,0,,ConnectionError
+MongoDB,careers_url,https://www.mongodb.com/careers,OK,200,https://www.mongodb.com/company/careers,MongoDB Careers | MongoDB
+DE Shaw,careers_url,https://www.deshaw.com/careers,OK,200,https://www.deshaw.com/careers,Careers - The D. E. Shaw Group
+Optiver,careers_url,https://optiver.com/working-at-optiver/career-opportunities/,OK,200,https://www.optiver.com/join-us/jobs/,"Jobs in Trading, Quant &amp; Tech | Optiver"
+WorldQuant,careers_url,https://www.worldquant.com/careers/,OK,200,https://www.worldquant.com/careers/,Quantitative Finance Careers at WorldQuant
+Morgan Stanley,careers_url,https://www.morganstanley.com/careers,OK,200,https://www.morganstanley.com/people,

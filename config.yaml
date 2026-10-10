@@ -1,0 +1,9 @@
+roles_include: [intern, internship, sde, software engineer, ml, machine learning, data, "2027"]
+roles_exclude: [senior, staff, principal, manager, director, "3+ years", "5+ years"]
+locations_include: [india, remote, bengaluru, hyderabad]
+max_llm_calls_per_day: 3
+digest_time_ist: "07:00"
+alert_channel: email
+
+# page_watch: words that make a link or line on a career page interesting
+page_watch_keywords: [intern, internship, interns, "2027", "early careers", campus, graduate, student, trainee, fresher]
