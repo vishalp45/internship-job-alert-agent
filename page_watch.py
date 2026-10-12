@@ -148,13 +148,37 @@ def run(limit=None, only=None):
     return dict(checked=len(rows), failed=failed, baselined=baselined, new=new)
 
 
+INDIA_WORDS = ["india", "bengaluru", "bangalore", "hyderabad", "pune", "mumbai", "delhi", "gurgaon",
+               "gurugram", "noida", "chennai", "kolkata", "ahmedabad", "kochi", "coimbatore",
+               "thiruvananthapuram", "jaipur", "indore", "chandigarh", "mohali", "vadodara", "nagpur"]
+
+
+def region_split(res):
+    """Splits new finds into India entries and everything else, each sorted by priority."""
+    rx = build_regex(load_cfg().get("india_keywords", INDIA_WORDS))
+    india, other = [], []
+    for company, prio, url, items in res["new"]:
+        ind = [i for i in items if rx.search(i.lower()) or "/en-in/" in i.lower()]
+        rest = [i for i in items if i not in ind]
+        if ind:
+            india.append((company, prio, url, ind))
+        if rest:
+            other.append((company, prio, url, rest))
+    key = lambda x: PRIORITY.get(x[1], 3)
+    return sorted(india, key=key), sorted(other, key=key)
+
+
 def format_digest(res):
-    new = sorted(res["new"], key=lambda x: PRIORITY.get(x[1], 3))
-    lines = [f"Checked {res['checked']} · baselined {res['baselined']} · failed {len(res['failed'])} · new {len(new)}", ""]
-    for company, prio, url, items in new:
-        lines.append(f"{company} [{prio or 'unranked'}] - {url}")
-        lines += [f"   • {i}" for i in items[:10]]
-        lines.append("")
+    india, other = region_split(res)
+    lines = [f"Checked {res['checked']} · baselined {res['baselined']} · failed {len(res['failed'])} · new {len(res['new'])}", ""]
+    for title, entries in (("=== INDIA ===", india), ("=== OTHER LOCATIONS / NOT STATED ===", other)):
+        if not entries:
+            continue
+        lines += [title, ""]
+        for company, prio, url, items in entries:
+            lines.append(f"{company} [{prio or 'unranked'}] - {url}")
+            lines += [f"   • {i}" for i in items[:10]]
+            lines.append("")
     if res["failed"]:
         lines.append("Could not load: " + ", ".join(res["failed"]))
     return "\n".join(lines)
@@ -177,7 +201,9 @@ def main(argv=None):
     if a.email and (res["new"] or a.status):
         from notify_email import send_email
         if res["new"]:
-            subject = f"Job Agent: {len(res['new'])} company page(s) with new postings"
+            india, other = region_split(res)
+            n_in, n_other = sum(len(e[3]) for e in india), sum(len(e[3]) for e in other)
+            subject = f"Job Agent: {n_in} India + {n_other} other new postings"
         else:
             subject = "Job Agent: weekly status - running fine, nothing new"
         try:
