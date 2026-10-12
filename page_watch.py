@@ -101,8 +101,10 @@ def load_state():
 
 def run(limit=None, only=None):
     cfg = load_cfg()
+    fits = make_fit(cfg)
+    friend_fits = make_friend_fit(cfg)
     hit = build_regex(cfg["page_watch_keywords"])
-    excl = [w.lower() for w in cfg["roles_exclude"]]
+    excl = [w.lower() for w in cfg["roles_exclude"] if w.lower() != "manager"]
     rows = [r for r in csv.DictReader(open("companies.csv", encoding="utf-8")) if r["check_method"] in (("page_watch", "needs_browser", "api") if HAS_BROWSER else ("page_watch", "api"))]
     if only:
         rows = [r for r in rows if r["company"].lower() == only.lower()]
@@ -134,12 +136,15 @@ def run(limit=None, only=None):
         if not ok:
             failed.append(r["company"])
             continue
+        items = {i for i in items if fits(i) or friend_fits(i)}
         prev = watch.get(r["company"])
         if prev is None:
             watch[r["company"]] = sorted(items)
             baselined += 1
         else:
             fresh = sorted(items - set(prev))
+            if cfg.get("check_links", True):
+                fresh = [i for i in fresh if link_alive(i)]
             if fresh:
                 new.append((r["company"], r["priority"], urls[0], fresh))
             watch[r["company"]] = sorted(set(prev) | items)
@@ -148,16 +153,140 @@ def run(limit=None, only=None):
     return dict(checked=len(rows), failed=failed, baselined=baselined, new=new)
 
 
+INTERN_WORDS = ["intern", "interns", "internship", "internships", "co-op", "summer analyst"]
+
+# Role families taken from the resumes (SDE, AI/ML, Mechanical) plus photography and product management.
+FIT_FAMILIES = {
+    "SDE": ["software", "sde", "swe", "developer", "development", "backend", "back-end", "frontend",
+            "front-end", "full stack", "full-stack", "fullstack", "web", "api", "mobile", "android", "ios",
+            "cloud", "devops", "sre", "platform", "systems", "security", "sdet", "python", "java", "c++",
+            "technology", "technical"],
+    "AI/ML": ["machine learning", "ml", "ai", "artificial intelligence", "genai", "generative ai", "llm",
+              "nlp", "computer vision", "deep learning", "data", "analytics", "research", "scientist",
+              "statistics", "quant", "quantitative"],
+    "Mechanical": ["mechanical", "mechatronics", "robotics", "cad", "solidworks", "autocad", "ansys", "cfd",
+                   "fea", "finite element", "thermal", "thermodynamics", "manufacturing", "fabrication",
+                   "aerospace", "automotive", "design engineer", "product design", "production engineer",
+                   "heat transfer", "fluid", "welding", "casting", "machine design", "kinematics",
+                   "simulation", "industrial", "r&d", "research and development", "process engineer"],
+    "Photography": ["photography", "photographer", "photo", "photos", "photojournalism", "videography",
+                    "videographer", "video", "cinematography", "visual", "multimedia", "creative",
+                    "content creator", "content creation"],
+    "Product": ["product", "product manager", "product management", "apm", "associate product manager",
+                "product analyst", "product owner", "program manager", "technical program"],
+    "Engineering": ["engineer", "engineering"],
+}
+FIT_NOT = ["sales", "marketing", "hr", "human resources", "recruiter", "recruiting", "talent", "finance",
+           "financial", "accounting", "audit", "tax", "legal", "procurement", "supply chain", "operations",
+           "business", "customer success", "customer support", "brand", "communications", "market", "ux",
+           "graphic", "analog", "vlsi", "asic", "fpga", "civil", "chemical", "electrical", "phd", "ph.d",
+           "mba", "master", "masters", "postdoc", "post-doctoral", "senior", "staff", "principal",
+           "director"]
+
+
+SOFTWARE_BLOCK = ["software", "sde", "swe", "developer", "backend", "frontend", "full stack", "web", "machine learning",
+                  "data", "ai", "product", "cloud", "devops", "qa", "mobile", "android", "ios"]
+HARDWARE_BLOCK = ["hardware", "embedded", "firmware", "rtl", "silicon", "chip", "soc"]
+
+# Friend section: electrical engineering student
+FRIEND_FAMILIES = {
+    "Electrical/ECE": ["electrical", "electronics", "electronic", "ece", "eee", "circuit", "circuits", "pcb",
+                       "power systems", "power system", "power electronics", "control systems", "control system",
+                       "signal processing", "iot", "ev", "electric vehicle", "battery", "plc", "scada",
+                       "automation"],
+    "Hardware/Embedded": ["embedded", "firmware", "hardware", "analog", "verification"],
+}
+FRIEND_NOT = ["sales", "marketing", "hr", "human resources", "recruiter", "recruiting", "talent", "finance",
+              "financial", "accounting", "audit", "tax", "legal", "procurement", "supply chain", "operations",
+              "business", "customer success", "customer support", "brand", "market", "ux", "graphic", "civil",
+              "chemical", "mechanical", "phd", "ph.d", "mba", "master", "masters", "postdoc", "post-doctoral",
+              "senior", "staff", "principal", "director"]
+
+
+def _build_fit(families, bad_words, blockers, strict=True):
+    intern = build_regex(INTERN_WORDS)
+    bad = build_regex(bad_words)
+    fam = {k: build_regex(v) for k, v in families.items()}
+    block = build_regex(blockers)
+    pm = re.compile(r"\b(product|program)\b")
+
+    def title(item):
+        return item.split(" | ")[0].lower()
+
+    def tags(item):
+        t = title(item)
+        strong = [k for k, rx in fam.items() if k != "Engineering" and rx.search(t)]
+        if strong:
+            return strong
+        if "Engineering" in fam and fam["Engineering"].search(t) and not block.search(t):
+            return ["Engineering"]
+        return []
+
+    def fits(item):
+        t = title(item)
+        if not intern.search(t) or bad.search(t):
+            return False
+        if re.search(r"\bmanager\b", t) and not pm.search(t):
+            return False
+        return bool(tags(item)) if strict else True
+
+    fits.tags = tags
+    return fits
+
+
+def make_fit(cfg):
+    """fits(item) keeps internships that match your role families; fits.tags(item) lists them."""
+    if not cfg.get("profile_filter", True):
+        fits = lambda item: True
+        fits.tags = lambda item: []
+        return fits
+    return _build_fit(cfg.get("fit_families", FIT_FAMILIES), cfg.get("fit_exclude", FIT_NOT),
+                      cfg.get("hardware_block", HARDWARE_BLOCK), cfg.get("profile_strict", True))
+
+
+def make_friend_fit(cfg):
+    """Same idea for the friend (electrical engineering) section. Off if friend_section: false."""
+    if not cfg.get("profile_filter", True) or not cfg.get("friend_section", True):
+        fits = lambda item: False
+        fits.tags = lambda item: []
+        return fits
+    return _build_fit(cfg.get("friend_families", FRIEND_FAMILIES), cfg.get("friend_exclude", FRIEND_NOT),
+                      cfg.get("software_block", SOFTWARE_BLOCK), True)
+
+
+URL_RX = re.compile(r"https?://[^\s]+")
+DEAD_PHRASES = ["no longer accepting", "no longer available", "position has been filled", "job has expired",
+                "this job is closed", "posting has expired", "page not found"]
+
+
+def link_alive(item):
+    """False only if the apply link is clearly dead or closed. Anything uncertain counts as alive."""
+    m = URL_RX.search(item)
+    if not m:
+        return True
+    try:
+        r = requests.get(m.group(0), headers=UA, timeout=12, allow_redirects=True)
+        if r.status_code in (404, 410):
+            return False
+        if re.search(r"/404|not-?found", r.url.lower()):
+            return False
+        return not any(p in r.text[:30000].lower() for p in DEAD_PHRASES)
+    except Exception:
+        return True
+
+
 INDIA_WORDS = ["india", "bengaluru", "bangalore", "hyderabad", "pune", "mumbai", "delhi", "gurgaon",
                "gurugram", "noida", "chennai", "kolkata", "ahmedabad", "kochi", "coimbatore",
                "thiruvananthapuram", "jaipur", "indore", "chandigarh", "mohali", "vadodara", "nagpur"]
 
 
-def region_split(res):
+def region_split(res, fit=None):
     """Splits new finds into India entries and everything else, each sorted by priority."""
     rx = build_regex(load_cfg().get("india_keywords", INDIA_WORDS))
     india, other = [], []
     for company, prio, url, items in res["new"]:
+        if fit is not None:
+            items = [i for i in items if fit(i)]
         ind = [i for i in items if rx.search(i.lower()) or "/en-in/" in i.lower()]
         rest = [i for i in items if i not in ind]
         if ind:
@@ -168,17 +297,29 @@ def region_split(res):
     return sorted(india, key=key), sorted(other, key=key)
 
 
+def tag_text(item, fit):
+    t = fit.tags(item)
+    return f"   [{', '.join(t)}]" if t else ""
+
+
 def format_digest(res):
-    india, other = region_split(res)
+    cfg = load_cfg()
+    mine, friend = make_fit(cfg), make_friend_fit(cfg)
     lines = [f"Checked {res['checked']} · baselined {res['baselined']} · failed {len(res['failed'])} · new {len(res['new'])}", ""]
-    for title, entries in (("=== INDIA ===", india), ("=== OTHER LOCATIONS / NOT STATED ===", other)):
-        if not entries:
+    for banner, fit in ((None, mine), ("##### FOR YOUR FRIEND (Electrical Engineering) #####", friend)):
+        india, other = region_split(res, fit)
+        if not (india or other):
             continue
-        lines += [title, ""]
-        for company, prio, url, items in entries:
-            lines.append(f"{company} [{prio or 'unranked'}] - {url}")
-            lines += [f"   • {i}" for i in items[:10]]
-            lines.append("")
+        if banner:
+            lines += [banner, ""]
+        for title, entries in (("=== INDIA ===", india), ("=== OTHER LOCATIONS / NOT STATED ===", other)):
+            if not entries:
+                continue
+            lines += [title, ""]
+            for company, prio, url, items in entries:
+                lines.append(f"{company} [{prio or 'unranked'}] - {url}")
+                lines += [f"   • {i}{tag_text(i, fit)}" for i in items[:10]]
+                lines.append("")
     if res["failed"]:
         lines.append("Could not load: " + ", ".join(res["failed"]))
     return "\n".join(lines)
@@ -201,9 +342,14 @@ def main(argv=None):
     if a.email and (res["new"] or a.status):
         from notify_email import send_email
         if res["new"]:
-            india, other = region_split(res)
+            cfg = load_cfg()
+            india, other = region_split(res, make_fit(cfg))
+            f_in, f_other = region_split(res, make_friend_fit(cfg))
             n_in, n_other = sum(len(e[3]) for e in india), sum(len(e[3]) for e in other)
+            n_friend = sum(len(e[3]) for e in f_in + f_other)
             subject = f"Job Agent: {n_in} India + {n_other} other new postings"
+            if n_friend:
+                subject += f" · friend: {n_friend}"
         else:
             subject = "Job Agent: weekly status - running fine, nothing new"
         try:
